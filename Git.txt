@@ -1,0 +1,46 @@
+Set Up Git:
+>git config --global user.name "Your Name"
+>git config --global user.email "youremail@domain.com"
+
+Other commands
+>git init //initilize local repository
+>git clone (url)
+>git add (file names)  //add files to index
+>git status   //check status of working tree
+>git push   //push to remote repository
+>git pull   // pull latest from remote repository
+>git commit -m "(committed message)
+>git remote add origin master (url)
+>git push -u origin master
+
+
+
+Commands for existing upload to repository
+>rd .git /S/Q
+>git init
+>git commit -m "FirstCommit"
+>git remote add origin https://github.com/sagarsalyan/angulargetpost.git
+>git push -u origin master    //will give error to pull
+>git branch --set-upstream-to=origin/master master
+>git pull --allow-unrelated-histories
+     make changes in edited files--(in my case README.md) 
+>git pull origin master --allow-unrelated-histories
+>git add README.md
+>git commit -m "Added ReadME.md"
+>git pull
+>git push origin master
+
+
+
+create a new repository on the command line
+echo "# UI5Wizard" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sagarsalyan/UI5Wizard.git
+git push -u origin master
+
+
+push an existing repository from the command line
+git remote add origin https://github.com/sagarsalyan/UI5Wizard.git
+git push -u origin master
